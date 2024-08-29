@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ff6f61, #ffcc00); /* Dégradé de fond */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 480px;
+    margin-top: 50px;
+    text-align: center; /* Centre le texte dans le conteneur */
+}
+
+h1 {
+    font-family: 'New Amsterdam', cursive; /* Appliquer New Amsterdam au titre */
+    color: #9b59b6; /* Couleur du titre */
+    font-size: 48px; /* Taille du titre */
+    text-align: center; /* Centre le texte */
+}
+
+blockquote {
+    font-family: 'Coming Soon', cursive; /* Utiliser Coming Soon pour les citations */
+    color: #ff6f61; /* Couleur du texte des citations */
+    font-size: 28px; /* Taille de la citation */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond de citation */
+    padding: 20px; /* Espacement interne */
+    border: 2px solid #ff6f61; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+footer {
+    font-family: 'Coming Soon', cursive; /* Utiliser Coming Soon pour le footer */
+    padding-top: 10px; /* Espacement au-dessus du footer */
+    color: #ff6f61; /* Couleur du texte de l'auteur */
+}
+
+.btn {
+    width: 40%;
+    height: 35px;
+    margin: 20px auto; /* Centrer le bouton */
+    font-size: 18px;
+    display: block;
+    font-family: 'New Amsterdam', cursive; /* Appliquer New Amsterdam au bouton */
+    background: linear-gradient(to right, #e74c3c, #8e44ad); /* Dégradé pour le bouton */
+    color: white; /* Texte blanc pour le bouton */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transition douce */
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #c0392b, #732d91); /* Changement de couleur au survol */
+}

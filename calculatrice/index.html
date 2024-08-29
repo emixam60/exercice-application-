@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calculatrice">
+        <p class="infos"></p>
+        <div class="resultat">
+            <input type="text" id="fenetre" readonly>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <input type="button" value="7" onclick="valeur('7')">
+                <input type="button" value="8" onclick="valeur('8')">
+                <input type="button" value="9" onclick="valeur('9')">
+                <input type="button" value="+" onclick="valeur('+')">
+            </div>
+            <div class="row">
+                <input type="button" value="4" onclick="valeur('4')">
+                <input type="button" value="5" onclick="valeur('5')">
+                <input type="button" value="6" onclick="valeur('6')">
+                <input type="button" value="-" onclick="valeur('-')">
+            </div>
+            <div class="row">
+                <input type="button" value="1" onclick="valeur('1')">
+                <input type="button" value="2" onclick="valeur('2')">
+                <input type="button" value="3" onclick="valeur('3')">
+                <input type="button" value="*" onclick="valeur('*')">
+            </div>
+            <div class="row">
+                <input type="button" value="0" onclick="valeur('0')">
+                <input type="button" value="." onclick="valeur('.')">
+                <input type="button" value="/" onclick="valeur('/')">
+                <input type="button" value="=" onclick="calculer()">
+            </div>
+            <input class="reset" type="button" value="Suppr" onclick="supprimer()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

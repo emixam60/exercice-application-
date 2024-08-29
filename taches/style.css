@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 450px;
+  position: absolute;
+  min-height: 100px;
+  transform: translate(-50%, -50%);
+}
+
+#nouvelletache {
+  position: relative;
+  padding: 30px 20px;
+}
+
+input {
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid antiquewhite;
+  outline: none;
+}
+
+#nouvelletache button {
+  float: right;
+  font-size: 16px;
+  background-color: antiquewhite;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+#taches {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background: white;
+  padding: 30px 20px;
+  margin-top: 10px;
+}
+
+.taches2 {
+  border: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid hsl(78, 98%, 79%);
+  cursor: pointer;
+  background: hsl(78, 98%, 79%);
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+}
+
+.taches2 span {
+  flex-grow: 1;
+}
+
+.taches2 button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.taches2 button.complete {
+    background: green;
+  }
+.taches2.completed {
+  text-decoration: line-through;
+  background-color: lightgray;
+  color: #888;
+}
